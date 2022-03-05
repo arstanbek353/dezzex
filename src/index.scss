@@ -1,0 +1,66 @@
+:root {
+    --font-color-primary: #11193c;
+    --font-color-secondary: #8990ad;
+    --green: #00e38c;
+    --green-light: #e5fcf3;
+    --blue: #2464fc;
+    --blue-light: #e6ebfc;
+    --red: #ff4b75;
+}
+
+.bi-triangle-fill.up {
+    color: var(--green);
+}
+.bi-triangle-fill.down {
+    color: var(--red);
+    &::before {
+        transform: rotate(-180deg);
+    }
+}
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    color: var(--font-color-secondary);
+    background-color: #fcfcfc;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    font: inherit;
+    text-decoration: inherit;
+}
+
+button {
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.Block-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+    &__title {
+        font-size: 30px;
+        color: var(--font-color-primary);
+    }
+    &__all {
+        font-size: 15px;
+        color: var(--blue);
+    }
+}

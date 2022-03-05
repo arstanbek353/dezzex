@@ -1,0 +1,104 @@
+.Dashboard {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 56px;
+    }
+    &__mtitle {
+        font-size: 50px;
+        color: var(--font-color-primary);
+        margin-bottom: 15px;
+    }
+    &__greetings {
+        font-size: 20px;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    &__add-button {
+        background-color: #00e38c;
+        box-shadow: 0px 3px 26px #0000001c;
+        border-radius: 5px;
+        margin-right: 50px;
+        font-size: 20px;
+        padding: 10px 20px;
+        color: #fff;
+        display: inline-flex;
+        i {
+            font-size: 24px;
+            margin-right: 8px;
+        }
+    }
+    &__total {
+        margin-bottom: 70px;
+    }
+    &__countrys {
+        margin-bottom: 58px;
+    }
+    &__grid {
+        display: grid;
+        grid-gap: 53px;
+        &--2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 1600px) {
+        &__header {
+            margin-bottom: 46px;
+        }
+        &__mtitle {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        &__greetings {
+            font-size: 18px;
+        }
+        &__add-button {
+            border-radius: 5px;
+            margin-right: 40px;
+            font-size: 18px;
+            padding: 7px 15px;
+            i {
+                font-size: 20px;
+                margin-right: 6px;
+            }
+        }
+        &__total {
+            margin-bottom: 50px;
+        }
+        &__countrys {
+            margin-bottom: 48px;
+        }
+        &__grid {
+            grid-gap: 43px;
+        }
+    }
+    @media (max-width: 900px) {
+        &__grid {
+            grid-gap: 20px;
+            &--2 {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+    @media (max-width: 600px) {
+        &__header {
+            display: block;
+            margin-bottom: 56px;
+        }
+        &__mtitle {
+            margin-bottom: 1px;
+        }
+        &__greetings {
+            margin-bottom: 15px;
+        }
+        &__right {
+            justify-content: space-between;
+        }
+        &__add-button {
+            margin-right: 10px;
+        }
+    }
+}

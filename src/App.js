@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from 'react'
+import MainRoute from './routes/main-route';
+import AuthRoute from './routes/auth-route'
+import { AuthContext } from "./context/auth/authContext";
+
+
+import './App.scss';
+import Sidebar from './components/sidebar/sidebar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const { user } = useContext(AuthContext);
+    return (
+        <div className="App">
+            {user ?
+                <div className="App__inner">
+                    <Sidebar />
+                    <div className="App__content">
+                        <MainRoute />
+                    </div>
+                </div>
+                : <div className="App__auth"><AuthRoute /></div>}
+        </div>
+    );
 }
 
 export default App;

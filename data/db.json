@@ -1,0 +1,141 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "Andrew",
+            "password": "1234",
+            "first_name": "Andrew",
+            "family_name": "Johnstons",
+            "img": 1
+        },
+        {
+            "id": 2,
+            "username": "ars",
+            "password": "4321",
+            "first_name": "Arstanbek",
+            "family_name": "Sheraliev",
+            "img": null
+        }
+    ],
+    "total": {
+        "balance": {
+            "value": "$5900.00"
+        },
+        "profits": {
+            "value": "$950.00",
+            "percent": "56"
+        },
+        "losses": {
+            "value": "$450.00",
+            "percent": "56"
+        },
+        "currencies": [
+            "bitcoin",
+            "dollar",
+            "euro",
+            "yen"
+        ]
+    },
+    "members": [
+        {
+            "id": 1,
+            "first_name": "Andrew",
+            "family_name": "Johnstons",
+            "role": "Top Trader",
+            "img": 1
+        },
+        {
+            "id": 2,
+            "first_name": "Anna",
+            "family_name": "Atkinsons",
+            "role": "Manager",
+            "img": null
+        },
+        {
+            "id": 3,
+            "first_name": "Mark",
+            "family_name": "Atkinsons",
+            "role": "Top Trader",
+            "img": null
+        },
+        {
+            "id": 4,
+            "first_name": "Johanna",
+            "family_name": "Tairons",
+            "role": "Manager",
+            "img": null
+        }
+    ],
+    "countrys": [
+        {
+            "id": 1,
+            "name": "Italy",
+            "data": [
+                474,
+                472,
+                473,
+                472,
+                473,
+                475
+            ],
+            "percent": 73,
+            "img": 1
+        },
+        {
+            "id": 2,
+            "name": "United States",
+            "data": [
+                420,
+                426,
+                420,
+                426,
+                420,
+                431
+            ],
+            "percent": 93,
+            "img": 2
+        },
+        {
+            "id": 3,
+            "name": "Canada",
+            "data": [
+                184,
+                185,
+                176,
+                185,
+                176,
+                174
+            ],
+            "percent": 10,
+            "img": null
+        },
+        {
+            "id": 4,
+            "name": "Spain",
+            "data": [
+                100,
+                131,
+                130,
+                131,
+                130,
+                134
+            ],
+            "percent": 13,
+            "img": 4
+        },
+        {
+            "id": 5,
+            "name": "South Africa",
+            "data": [
+                490,
+                420,
+                475,
+                420,
+                475,
+                471
+            ],
+            "percent": 5,
+            "img": null
+        }
+    ]
+}

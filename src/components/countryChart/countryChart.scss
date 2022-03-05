@@ -1,0 +1,56 @@
+.CountryChart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    color: #495172;
+    text-align: center;
+    &__name {
+        font-size: 19px;
+        margin-bottom: 12px;
+    }
+    &__value {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__price {
+        font-size: 47px;
+        margin-right: 12px;
+    }
+    &__chart {
+        width: 167px;
+        height: 98px;
+    }
+    @media (max-width: 1600px) {
+        padding: 0 10px;
+        padding-bottom: 15px;
+        &__name {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        &__price {
+            font-size: 37px;
+            margin-right: 10px;
+        }
+        &__chart {
+            width: 147px;
+            height: 78px;
+        }
+    }
+    @media (max-width: 600px) {
+        padding: 0 10px;
+        padding-bottom: 15px;
+        &__name {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        &__direction {
+            font-size: 13px;
+        }
+        &__price {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+    }
+}

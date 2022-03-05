@@ -1,0 +1,27 @@
+.App {
+    &__inner {
+        display: flex;
+    }
+    &__auth {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    &__content {
+        height: 100vh;
+        overflow: auto;
+        padding: 70px 90px;
+        flex-grow: 1;
+    }
+    @media (max-width: 1600px) {
+        &__content {
+            padding: 35px 45px;
+        }
+    }
+    @media (max-width: 600px) {
+        &__content {
+            padding: 20px 15px;
+        }
+    }
+}

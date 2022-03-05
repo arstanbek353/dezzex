@@ -1,0 +1,112 @@
+.Total {
+    display: flex;
+    justify-content: space-between;
+    &__line {
+        width: 1px;
+        background-color: #c5c9d7;
+    }
+    &__title {
+        font-size: 19px;
+        margin-bottom: 19px;
+    }
+    &__value {
+        display: flex;
+        align-items: center;
+    }
+    &__price {
+        font-size: 37px;
+        color: var(--font-color-primary);
+    }
+    &__currencies {
+        display: flex;
+        align-items: center;
+    }
+    &__currency {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 33px;
+        height: 33px;
+        border-radius: 100%;
+        background-color: var(--blue-light);
+        margin-right: 16px;
+        i {
+            font-size: 25px;
+            color: var(--blue);
+        }
+    }
+    &__percent {
+        font-size: 19px;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        i {
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        &--up {
+            color: var(--green);
+        }
+        &--down {
+            color: var(--red);
+        }
+    }
+    @media (max-width: 1600px) {
+        &__title {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        &__price {
+            font-size: 30px;
+        }
+        &__currency {
+            width: 28px;
+            height: 28px;
+            margin-right: 12px;
+            i {
+                font-size: 20px;
+            }
+        }
+        &__percent {
+            font-size: 15px;
+            margin-left: 30px;
+            i {
+                font-size: 12px;
+                margin-right: 8px;
+            }
+        }
+    }
+    @media (max-width: 900px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        &__line {
+            display: none;
+        }
+    }
+    @media (max-width: 600px) {
+        grid-gap: 15px;
+        &__value {
+            display: block;
+        }
+        &__price {
+            font-size: 25px;
+        }
+        &__currency {
+            width: 22px;
+            height: 22px;
+            margin-right: 8px;
+            i {
+                font-size: 16px;
+            }
+        }
+        &__percent {
+            font-size: 12px;
+            margin-left: 20px;
+            i {
+                font-size: 8px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
